@@ -185,6 +185,7 @@ body {
     background-color: #F2F2F2;
 }
 
+/* Estilos de Botones */
 .btnAdd {
     background-color: var(--main-bg-color);
     border-color: var(--main-bg-color);
@@ -227,13 +228,14 @@ body {
 }
 
 
-/* Carousel */
+/* Estilos de Carousel */
 .carousel-item {
     height: 300px;
     width: 400px;
     min-width: 300px;
 }
 
+/* Rotaciones de la imagen */
 .bg-1 {
     background-image: url("../img/smartTv85.png");
 }

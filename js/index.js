@@ -1,29 +1,35 @@
+// Producto seleccionado
 const producto = {
     nombre: 'SMART TV SAMSUNG 85 NEO QLED 4K QN85A HDR10',
     precio: 710890,
     image: './img/smartTv85.png'
 };
 
+// Array con imágenes de otros productos
 const imgProductos = ['./img/lavarropa.png', './img/estufa.png', './img/calefon.png', './img/plancha.png', './img/celular.png'];
 
-// Descuento del 30%
-const descuentoProductos = 0.30;
 
+// Obtengo los elementos del html
 const itemDesc = document.getElementById("itemDesc");
 const cards = document.getElementById("cards");
-const fragmentProducts = document.createDocumentFragment();
-
 // contador de carrito
 const numCarrito = document.getElementById("numCarrito");
 
+// Creo un fragment para agregar los productos
+const fragmentProducts = document.createDocumentFragment();
+
+// Destructuring del producto
 const { image, nombre, precio } = producto;
 
+
+// Variable para caluclar el descuento del 30%
+const descuentoProductos = 0.30;
 // Calculo el descuento con el precio del producto
 const descuento = precio - (precio * descuentoProductos);
-
 const productoCuotas = (descuento / 12).toFixed(0);
 
 
+// Agrego al html la descripción del producto con el botón de Compra
 itemDesc.innerHTML = `    
     <div class="laptopResponsive">
         <h4>${nombre}</h4>
@@ -60,11 +66,11 @@ itemDesc.innerHTML = `
     </div>
     `;
 
+// Obtengo el boton de agregar
+const botonAdd = document.getElementById("botonAgregar");     
 
-const botonAdd = document.getElementById("botonAgregar");     // Obtengo el boton de agregar
-
-botonAdd.onclick = function (e) {
-    console.log(e.target.dataset);
+// Evento click del boton de agregar para pushear al array Carrito y luego al localStorage
+botonAdd.onclick = function (e) {    
     const { nombre, precio, image } = e.target.dataset;
 
     const productoSeleccionado = {
@@ -91,6 +97,7 @@ botonAdd.onclick = function (e) {
 
 }
 
+// Bucle para mostrar el resto de los productos en la parte inferior
 for (let index = 0; index < imgProductos.length; index++) {
     const divCard = document.createElement("div");
 
