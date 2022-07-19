@@ -72,6 +72,33 @@ body {
     background-color: var(--main-bg-color);
 }
 
+.bgCarrito {
+    font-size: 7px;
+    position: relative;
+    right: -22px;
+    top: -19px !important;
+    background-color: var(--main-bg-color);
+}
+
+.btnNavCarrito {
+    border-radius: 0px;
+    font-size: 20px;
+    transition: none;
+    position: absolute;
+}
+
+.btnNavCarrito:hover {
+    border-radius: 0px;
+    font-size: 20px;
+    border: none;
+}
+
+.btnNavCarrito:focus {
+    border-radius: 0px;
+    font-size: 20px;
+    border: none;
+}
+
 .textPrincipal {
     color: var(--main-bg-color) !important;
 }
@@ -122,6 +149,7 @@ body {
 
 .textInfo {
     color: #008ACB;
+    cursor: pointer;
 }
 
 

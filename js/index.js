@@ -13,6 +13,9 @@ const itemDesc = document.getElementById("itemDesc");
 const cards = document.getElementById("cards");
 const fragmentProducts = document.createDocumentFragment();
 
+// contador de carrito
+const numCarrito = document.getElementById("numCarrito");
+
 const { image, nombre, precio } = producto;
 
 // Calculo el descuento con el precio del producto
@@ -38,7 +41,7 @@ itemDesc.innerHTML = `
             </div>
             <p><i class="bi bi-credit-card"></i><b> 12</b> cuotas x <b>$ ${productoCuotas}  </b><a class="textInfo" href="index.html">Ver cuotas y medios de pago</a></p>
         </div>  
-        <button class="btn btnAdd bgPrincipal">Comprar</button>
+        <button class="btn btnAdd bgPrincipal" id="botonAgregar" data-nombre=${JSON.stringify(producto.nombre)} data-precio=${JSON.stringify(producto.precio)} data-image=${JSON.stringify(producto.image)}>Comprar</button>
         <hr></hr>
         <div><p><span class="badge bgWarning text-dark">Envío GRATIS</span>
         <span> Ver zonas disponibles</span></p></div>
@@ -57,6 +60,36 @@ itemDesc.innerHTML = `
     </div>
     `;
 
+
+const botonAdd = document.getElementById("botonAgregar");     // Obtengo el boton de agregar
+
+botonAdd.onclick = function (e) {
+    console.log(e.target.dataset);
+    const { nombre, precio, image } = e.target.dataset;
+
+    const productoSeleccionado = {
+        nombre: nombre,
+        precio: precio,
+        image: image
+    }
+    
+    Swal.fire({
+        title: 'Producto Agregado !',
+        text: 'Puede continuar con su compra.',
+        imageUrl: productoSeleccionado.image,
+        imageWidth: 300,
+        imageHeight: 300,
+        imageAlt: 'Custom image',
+        confirmButtonText: 'Seguir comprando',
+        confirmButtonColor: '#B5190D',
+      })
+    const arrayProductos = JSON.parse(localStorage.getItem("productosCarrito")) || [];
+    arrayProductos.push(productoSeleccionado);
+
+    numCarrito.textContent = arrayProductos.length;
+    localStorage.setItem("productosCarrito", JSON.stringify(arrayProductos));
+
+}
 
 for (let index = 0; index < imgProductos.length; index++) {
     const divCard = document.createElement("div");
@@ -77,6 +110,6 @@ for (let index = 0; index < imgProductos.length; index++) {
         </div>
     `
     divCard.innerHTML = contentCard;
-    fragmentProducts.appendChild(divCard);    
+    fragmentProducts.appendChild(divCard);
     cards.appendChild(fragmentProducts);
 }

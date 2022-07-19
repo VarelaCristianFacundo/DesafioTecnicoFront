@@ -26,7 +26,9 @@
                 </div>
                 <div class="container d-flex flex-row-reverse">
                     <div class="col-lg-2">
-                        <button class="btn btnNav" type="submit"><i class="bi bi-cart"></i>
+                        <button class="btn btnNavCarrito" type="submit">
+                            <span class="badge bgCarrito text-white ms-1 rounded-pill" id="numCarrito">0</span>
+                            <i class="bi bi-cart"></i>
                         </button>
                     </div>
                     <div class="vr d-none d-lg-flex h-150 mx-lg-2 text-gray"></div>
@@ -39,12 +41,12 @@
                                     Mi Cuenta
                                 </a>
                                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <li><a class="dropdown-item" href="#">Action</a></li>
-                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li><a class="dropdown-item" href="#">Mi Perfil</a></li>
+                                    <li><a class="dropdown-item" href="#">Mis Compras</a></li>
                                     <li>
                                         <hr class="dropdown-divider">
                                     </li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    <li><a class="dropdown-item" href="#">Registrarse</a></li>
                                 </ul>
                             </li>
                         </ul>
@@ -76,12 +78,9 @@
                             PRODUCTOS
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#">Reyes Magos</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            <li><a class="dropdown-item" href="#">Electrodomésticos</a></li>
+                            <li><a class="dropdown-item" href="#">Informática</a></li>                            
+                            <li><a class="dropdown-item" href="#">Jardín</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
@@ -272,6 +271,8 @@
         integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
         crossorigin="anonymous"></script>
     <link href="./css/style.css" rel="stylesheet" />
+    <script src="./node_modules/sweetalert2/dist/sweetalert2.all.js"></script>
+
 </body>
 
 </html>
