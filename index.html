@@ -8,10 +8,11 @@
     <title>etres</title>
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+    <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
 </head>
 
 <body>
-
+    <!-- NAVBAR CON LOGO Y BUSCADOR -->
     <nav class="navbar navbar-expand-lg bgNavLogo">
         <div class="container-fluid">
             <div class="col-lg-1">
@@ -25,8 +26,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <div class="col-lg-9">
                     <form class="d-flex" role="search">
-                        <input class="form-control" type="search" placeholder="Buscar Productos"
-                            aria-label="Search">
+                        <input class="form-control" type="search" placeholder="Buscar Productos" aria-label="Search">
                     </form>
                 </div>
                 <div class="container d-flex flex-row-reverse">
@@ -56,7 +56,7 @@
                     </div>
                     <div class="vr d-none d-lg-flex h-150 mx-lg-3 text-gray"></div>
                     <div class="col-lg-1">
-                        
+
                         <button class="btn btn-outline-danger me-2" type="submit"><i class="bi bi-heart"></i></button>
                     </div>
 
@@ -65,8 +65,8 @@
             </div>
         </div>
     </nav>
-
-    <nav class="navbar navbar-expand-lg bgNavMenu">
+    <!-- NAVBAR CON MENU -->
+    <nav class="navbar navbar-expand-lg bgPrincipal">
         <div class="container-fluid">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -106,23 +106,173 @@
         </div>
     </nav>
 
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-5 mt-3">
+                <div class="borderImage">
+                    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active bg-1"></div>
+                            <div class="carousel-item bg-2"></div>
+                            <div class="carousel-item bg-3"></div>
+                            <div class="carousel-item bg-4"></div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
+                                class="active carouselItemSize" aria-current="true" aria-label="Slide 1"><img
+                                    src="./img/smartTv85.png" alt="" class="d-block w100 img-fluid"></button>
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                                class="carouselItemSize" aria-label="Slide 2"><img src="./img/smartTv85.png" alt=""
+                                    class="d-block w100 img-fluid bg-2"></button>
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                                class="carouselItemSize" aria-label="Slide 3"><img src="./img/smartTv85.png" alt=""
+                                    class="d-block w100 img-fluid bg-3"></button>
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+                                class="carouselItemSize" aria-label="Slide 4"><img src="./img/smartTv85.png" alt=""
+                                    class="d-block w100 img-fluid bg-4"></button>
+                        </div>
 
 
-    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti amet mollitia inventore doloremque ducimus
-        dolor minima quidem commodi assumenda illo minus tenetur aperiam iusto eum officia tempora, dicta magnam? Omnis?
-    </p>
+
+                    </div>
+
+
+                </div>
+            </div>
+            <div class="col-lg-7 mt-5 " id="itemDesc"></div>
+        </div>
+    </div>
+
+
+    <div class="container  mt-5 mb-4 d-flex justify-content-center">
+        <div class="row">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="active nav-link navLink">Descripción</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link navLink">Ficha Técnica</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    <div class="container">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti amet mollitia inventore doloremque ducimus
+            dolor minima quidem commodi assumenda illo minus tenetur aperiam iusto eum officia tempora, dicta magnam?
+            Omnis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, aspernatur. Autem accusantium qui
+            explicabo
+            reiciendis odio praesentium repudiandae accusamus. Sed atque illum veritatis officia nulla nam alias itaque
+            aperiam ipsam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit ipsam labore aliquid unde
+            aspernatur? Aperiam possimus nesciunt repudiandae, dolor quae unde, quod nobis, eius libero sequi ut error
+            cumque quos?</p>
+
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi excepturi nemo accusantium cum necessitatibus
+            voluptate maiores facere saepe id, illo iusto obcaecati accusamus quidem pariatur repellendus, reprehenderit
+            voluptates, tenetur non!
+        </p>
+    </div>
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 mt-5">
+                <h4 class="text-center fw-semibold">Más en esta categoría</h4>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mb-5">
+        <div class="row">
+            <div class="col-lg-12 mt-3">
+                <div class="row row-cols-1 row-cols-md-5 g-4" id="cards"></div>
+            </div>
+        </div>
+    </div>
 
 
 
+    <!-- Footer -->
+    <footer>
+        <div class="container py-5">
+            <div class="row py-4">
+                <div class="col-lg-4 col-md-6 mb-4 mb-lg-0"><img src="img/logo.png" alt="" width="180" class="mb-3">
+                    <p class="font-italic text-muted">Atención Telefónica</p>
+                    <p class="font-italic text-muted">0810-333-9470</p>
+                    <p class="font-italic text-muted">(0236) 4421081</p>
+                    <ul class="list-inline mt-4">
+                        <li class="list-inline-item"><a href="#" target="_blank" title="twitter"><i
+                                    class="fa fa-twitter"></i></a></li>
+                        <li class="list-inline-item"><a href="#" target="_blank" title="facebook"><i
+                                    class="fa fa-facebook"></i></a></li>
+                        <li class="list-inline-item"><a href="#" target="_blank" title="instagram"><i
+                                    class="fa fa-instagram"></i></a></li>
+                        <li class="list-inline-item"><a href="#" target="_blank" title="pinterest"><i
+                                    class="fa fa-pinterest"></i></a></li>
+                        <li class="list-inline-item"><a href="#" target="_blank" title="vimeo"><i
+                                    class="fa fa-vimeo"></i></a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
+                    <h6 class="text-uppercase font-weight-bold mb-4">Shop</h6>
+                    <ul class="list-unstyled mb-0">
+                        <li class="mb-2"><a href="#" class="text-muted">For Women</a></li>
+                        <li class="mb-2"><a href="#" class="text-muted">For Men</a></li>
+                        <li class="mb-2"><a href="#" class="text-muted">Stores</a></li>
+                        <li class="mb-2"><a href="#" class="text-muted">Our Blog</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
+                    <h6 class="text-uppercase font-weight-bold mb-4">Company</h6>
+                    <ul class="list-unstyled mb-0">
+                        <li class="mb-2"><a href="#" class="text-muted">Login</a></li>
+                        <li class="mb-2"><a href="#" class="text-muted">Register</a></li>
+                        <li class="mb-2"><a href="#" class="text-muted">Wishlist</a></li>
+                        <li class="mb-2"><a href="#" class="text-muted">Our Products</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-lg-0">
+                    <h6 class="text-uppercase font-weight-bold mb-4">Newsletter</h6>
+                    <p class="text-muted mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. At itaque
+                        temporibus.</p>
+                    <div class="p-1 rounded border">
+                        <div class="input-group">
+                            <input type="email" placeholder="Enter your email address" aria-describedby="button-addon1"
+                                class="form-control border-0 shadow-0">
+                            <div class="input-group-append">
+                                <button id="button-addon1" type="submit" class="btn btn-link"><i
+                                        class="fa fa-paper-plane"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-    <!-- Footer-->
-    <footer class="fixed-bottom bgFooter">
-        <div class="container">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, blanditiis modi, nobis est cumque
-                temporibus in accusantium, earum eligendi expedita facere! Illum sapiente possimus reiciendis, facere
-                sint illo neque ratione.</p>
+        <!-- Copyrights -->
+        <div class="py-4">
+            <div class="container text-center">
+                <p class="text-muted mb-0 py-2">© 2019 Bootstrapious All rights reserved.</p>
+            </div>
         </div>
     </footer>
+    <!-- End -->
 
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
