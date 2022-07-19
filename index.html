@@ -15,24 +15,24 @@
     <!-- NAVBAR CON LOGO Y BUSCADOR -->
     <nav class="navbar navbar-expand-lg bgNavLogo">
         <div class="container-fluid">
-            <div class="col-lg-1">
+            <div class="col-lg-3 col-md-1 col-sm-5 logoResponsive">
                 <a class="navbar-brand logo" href="#">LOGO</a>
             </div>
-            <div class="navbar-collapse" id="navbarSupportedContent">
-                <div class="col-lg-9">
+            <div class="navbar-collapse">
+                <div class="col-lg-7">
                     <form class="d-flex" role="search">
                         <input class="form-control" type="search" placeholder="Buscar Productos" aria-label="Search">
                     </form>
                 </div>
-                <div class="container d-flex flex-row-reverse">
-                    <div class="col-lg-2">
+                <div class="container d-flex flex-row-reverse webResponsive">
+                    <div class="col-lg-2 accountResponsive">
                         <button class="btn btnNavCarrito" type="submit">
                             <span class="badge bgCarrito text-white ms-1 rounded-pill" id="numCarrito">0</span>
                             <i class="bi bi-cart"></i>
                         </button>
                     </div>
                     <div class="vr d-none d-lg-flex h-150 mx-lg-2 text-gray"></div>
-                    <div class="col-lg-4">
+                    <div class="col-lg-5">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
@@ -100,9 +100,12 @@
         </div>
     </nav>
 
+    <div>
+        <img class="celResponsive" src="./img/smartTv85.png" style="display: none;" alt="">
+    </div>
     <div class="container">
         <div class="row">
-            <div class="col-lg-5 mt-3">
+            <div class="col-lg-5 col-md-12 mt-3 carouselSize">
                 <div class="borderImage">
                     <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
                         <div class="carousel-inner">
@@ -144,12 +147,12 @@
 
                 </div>
             </div>
-            <div class="col-lg-7 mt-5 " id="itemDesc"></div>
+            <div class="col-lg-7 col-md-12 mt-5 webResponsive" id="itemDesc"></div>
         </div>
     </div>
 
 
-    <div class="container  mt-5 mb-4 d-flex justify-content-center">
+    <div class="container mt-5 mb-4 d-flex justify-content-center">
         <div class="row">
             <nav class="navbar navbar-expand-lg">
                 <div class="container-fluid">
@@ -206,7 +209,7 @@
     <footer>
         <div class="container">
             <div class="row py-2">
-                <div class="col-lg-1 col-md-6 mb-4 mb-lg-0">
+                <div class="col-lg-1 col-md-6 mb-4 mb-lg-0 webResponsive">
                     <i class="bi bi-telephone sizeIcon textPrincipal"></i>
                 </div>
                 <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">

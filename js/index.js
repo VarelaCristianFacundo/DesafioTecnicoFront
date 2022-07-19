@@ -25,13 +25,13 @@ const productoCuotas = (descuento / 12).toFixed(0);
 
 
 itemDesc.innerHTML = `    
-    <div>
+    <div class="laptopResponsive">
         <h4>${nombre}</h4>
-        <h6 class="textPrincipal">Precio en 1 pago</h6>
+        <h6 class="textPrincipal webResponsive">Precio en 1 pago</h6>
         
         <div class="container">
             <div class="row">
-                <div class="col-12">
+                <div class="col-12 webResponsive">
                     <p>
                         <span class="textPrincipal"> <b class="h4"><span class="h10">$</span> ${descuento} </b></span>
                         <span class="text-muted text-decoration-line-through">$${precio}</span>
@@ -39,11 +39,11 @@ itemDesc.innerHTML = `
                     </p>
                 </div>       
             </div>
-            <p><i class="bi bi-credit-card"></i><b> 12</b> cuotas x <b>$ ${productoCuotas}  </b><a class="textInfo" href="index.html">Ver cuotas y medios de pago</a></p>
+            <p class="webResponsive"><i class="bi bi-credit-card"></i><b> 12</b> cuotas x <b>$ ${productoCuotas}  </b><a class="textInfo" href="index.html">Ver cuotas y medios de pago</a></p>
         </div>  
-        <button class="btn btnAdd bgPrincipal" id="botonAgregar" data-nombre=${JSON.stringify(producto.nombre)} data-precio=${JSON.stringify(producto.precio)} data-image=${JSON.stringify(producto.image)}>Comprar</button>
+        <button class="btn btnAdd bgPrincipal webResponsive" id="botonAgregar" data-nombre=${JSON.stringify(producto.nombre)} data-precio=${JSON.stringify(producto.precio)} data-image=${JSON.stringify(producto.image)}>Comprar</button>
         <hr></hr>
-        <div><p><span class="badge bgWarning text-dark">Envío GRATIS</span>
+        <div class="webResponsive"><p><span class="badge bgWarning text-dark">Envío GRATIS</span>
         <span> Ver zonas disponibles</span></p></div>
         <div class="row">
             <div class="col-1"><i class="bi bi-shop-window sizeIcon text-muted"></i></div>
