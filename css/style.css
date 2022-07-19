@@ -1,5 +1,7 @@
+/* ESTILOS PRINCIPALES DE LA PAGINA */
 body {
     font-family: Open Sans;
+    --main-bg-color: #B5190D;
 }
 
 .navLink {
@@ -15,11 +17,11 @@ body {
 }
 
 .navLink:hover {
-    color: #B5190D;
+    color: var(--main-bg-color);
 }
 
 .active {
-    color: #B5190D !important;
+    color: var(--main-bg-color) !important;
     text-decoration: underline;
 }
 
@@ -28,11 +30,11 @@ body {
 }
 
 .bgPrincipal {
-    background-color: #B5190D;
+    background-color: var(--main-bg-color);
 }
 
 .textPrincipal {
-    color: #B5190D !important;
+    color: var(--main-bg-color) !important;
 }
 
 .bgNavLogo {
@@ -44,8 +46,8 @@ body {
 }
 
 .btnAdd {
-    background-color: #B5190D;
-    border-color: #B5190D;
+    background-color: var(--main-bg-color);
+    border-color: var(--main-bg-color);
     color: #FFF;
     border-radius: 0px;
     padding-top: 10px;
