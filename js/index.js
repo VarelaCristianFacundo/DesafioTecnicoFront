@@ -40,6 +40,20 @@ itemDesc.innerHTML = `
         </div>  
         <button class="btn btnAdd bgPrincipal">Comprar</button>
         <hr></hr>
+        <div><p><span class="badge bgWarning text-dark">Envío GRATIS</span>
+        <span> Ver zonas disponibles</span></p></div>
+        <div class="row">
+            <div class="col-1"><i class="bi bi-shop-window sizeIcon text-muted"></i></div>
+            <div class="col-5 lh-1 mt-3">
+                <p class="fw-bold">Retiro GRATIS por Sucursal</p>
+                <a class="textInfo">Calcular costo de envío</a>
+            </div>
+            <div class="col-1"><i class="bi bi-truck sizeIcon text-muted"></i></div>
+            <div class="col-5 lh-1 mt-3">
+                <p class="fw-bold">Envío a todo el país</p>
+                <a class="textInfo">Calcular costo de envío</a>
+            </div>
+        </div>
     </div>
     `;
 
@@ -63,7 +77,6 @@ for (let index = 0; index < imgProductos.length; index++) {
         </div>
     `
     divCard.innerHTML = contentCard;
-    fragmentProducts.appendChild(divCard);
-    console.log(fragmentProducts);
+    fragmentProducts.appendChild(divCard);    
     cards.appendChild(fragmentProducts);
 }

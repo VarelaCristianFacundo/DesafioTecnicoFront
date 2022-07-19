@@ -16,14 +16,9 @@
     <nav class="navbar navbar-expand-lg bgNavLogo">
         <div class="container-fluid">
             <div class="col-lg-1">
-                <a class="navbar-brand" href="#">L O G O</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+                <a class="navbar-brand logo" href="#">LOGO</a>
             </div>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="navbar-collapse" id="navbarSupportedContent">
                 <div class="col-lg-9">
                     <form class="d-flex" role="search">
                         <input class="form-control" type="search" placeholder="Buscar Productos" aria-label="Search">
@@ -31,7 +26,7 @@
                 </div>
                 <div class="container d-flex flex-row-reverse">
                     <div class="col-lg-2">
-                        <button class="btn btn-outline-dark" type="submit"><i class="bi bi-cart"></i>
+                        <button class="btn btnNav" type="submit"><i class="bi bi-cart"></i>
                         </button>
                     </div>
                     <div class="vr d-none d-lg-flex h-150 mx-lg-2 text-gray"></div>
@@ -56,8 +51,7 @@
                     </div>
                     <div class="vr d-none d-lg-flex h-150 mx-lg-3 text-gray"></div>
                     <div class="col-lg-1">
-
-                        <button class="btn btn-outline-danger me-2" type="submit"><i class="bi bi-heart"></i></button>
+                        <button class="btn btnNav me-2" type="submit"><i class="bi bi-heart"></i></button>
                     </div>
 
                     </ul>
@@ -90,16 +84,17 @@
                             <li><a class="dropdown-item" href="#">Something else here</a></li>
                         </ul>
                     </li>
-                    <a class="nav-link textColorMenu" aria-current="page" href="#">Reyes Magos</a>
+                    <li class="nav-item">
+                        <a class="nav-link textColorMenu" aria-current="page" href="#">Reyes Magos</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link textColorMenu" href="#">Ofertas Camping</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link textColorMenu">Promo Aires</a>
+                        <a class="nav-link textColorMenu" href="#">Promo Aires</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link textColorMenu">Lanzamientos</a>
+                        <a class="nav-link textColorMenu" href="#">Lanzamientos</a>
                     </li>
                 </ul>
             </div>
@@ -212,17 +207,21 @@
     <footer>
         <div class="container">
             <div class="row py-2">
-                <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
-                    <p class="textPrincipal fs-6">Atención Telefónica</p>
-                    <p class="textPrincipal fw-bold fs-5">0810-333-9470</p>
-                    <p class="textPrincipal fw-bold fs-5">(0236) 4421081</p>
+                <div class="col-lg-1 col-md-6 mb-4 mb-lg-0">
+                    <i class="bi bi-telephone sizeIcon textPrincipal"></i>
                 </div>
-                <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
+                    <p class="textPrincipal fs-6 lh-sm">Atención Telefónica<br>
+                        <span class="textPrincipal fw-bold fs-5">0810-333-9470</span><br>
+                        <span class="textPrincipal fw-bold fs-5">(0236) 4421081</span>
+                    </p>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
                     <h6 class="fw-bold">CENTRO DE AYUDA</h6>
                     <ul class="list-unstyled mb-0">
                         <li class="mb-2"><a href="#" class="text-muted">Medios de Pago y Envío</a></li>
                         <li class="mb-2"><a href="#" class="text-muted">Preguntas Frecuentes</a></li>
-                        <li class="mb-2"><a href="#" class="text-muted">Política de Cambios</a></li>                        
+                        <li class="mb-2"><a href="#" class="text-muted">Política de Cambios</a></li>
                     </ul>
                 </div>
                 <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
@@ -230,10 +229,10 @@
                     <ul class="list-unstyled mb-0">
                         <li class="mb-2"><a href="#" class="text-muted">La Empresa</a></li>
                         <li class="mb-2"><a href="#" class="text-muted">Sucursales</a></li>
-                        <li class="mb-2"><a href="#" class="text-muted">Contacto</a></li>                        
+                        <li class="mb-2"><a href="#" class="text-muted">Contacto</a></li>
                     </ul>
                 </div>
-                <div class="col-lg-3 col-md-6 mb-lg-0">
+                <div class="col-lg-4 col-md-6 mb-lg-0">
                     <h6 class="fw-bold">SUSCRIBITE</h6>
                     <p class="text-muted mb-4">Recibí en tu email nuestras ofertas e ingresos</p>
                     <div class="p-1 rounded border">
@@ -248,12 +247,17 @@
                 </div>
             </div>
         </div>
-        <hr>
 
         <!-- Copyrights -->
-        <div class="py-2">
-            <div class="container text-start">
-                <p class="text-muted mb-0 py-2">© 2019 Bootstrapious All rights reserved.</p>
+        <div class="py-2 container">
+            <hr>
+            <div class="row">
+                <div class="container text-start col-11">
+                    <p class="text-muted mb-0 py-2">© CLIENTE 2022 - Todos los derechos reservados</p>
+                </div>
+                <div class="col-1">
+                    <img src="./ico/datafiscal.png" alt="">
+                </div>
             </div>
         </div>
     </footer>
